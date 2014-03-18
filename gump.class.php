@@ -1091,7 +1091,7 @@ class GUMP
 
         $bool = filter_var($input[$field], FILTER_VALIDATE_BOOLEAN);
 
-        if(!is_bool($bool))
+        if($bool)
         {
             return array(
                 'field' => $field,
